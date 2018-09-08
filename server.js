@@ -22,7 +22,7 @@ app.use(morgan('dev')); // log every request to the console
 app.use(cookieParser()); // read cookies (needed for auth)
 app.use(bodyParser()); // get information from html forms
 
-app.use(express.static('../client/dist/meanApp')); // set up ejs for templating
+app.use(express.static('./client/dist/meanApp')); // set up ejs for templating
 
 // // required for passport
 app.use(session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secret
