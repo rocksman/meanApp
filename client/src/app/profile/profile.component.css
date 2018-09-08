@@ -1,0 +1,90 @@
+.body{
+    background: url('../../assets/img/bg4.jpg');
+    position: absolute;
+    top:0;
+    background-size: contain;
+    min-height: 100vh;
+    width: 100vw;
+}
+.container{
+    background-color: rgba(1,1,1,0.7);
+    height: 80vh;
+    width:70%;
+    display: block;
+    margin:4em auto;
+    border-radius:10px;
+}
+.vertical-menu {
+    font-size:0.8em;
+    width: 20%; /* Set a width if you like */
+    display: block;
+    border: none;
+    height: 90vh;
+    z-index: 6;
+    float:left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.vertical-menu a {
+    position: relative;
+    color: #ddd; /* Black text color */
+    display: block; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    height: 10vh;
+    padding-top: 3vh;
+    text-align: center;
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.vertical-menu a:hover {
+    background-color: #222;
+}
+
+.vertical-menu .active {
+    color: white;
+    background: #111;
+    padding: 4vh;
+    padding-bottom: 3vh;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-align: center;
+}
+.vertical-menu a.blue{
+    background-color: #222;
+    color: rgb(0,102,204);
+    border-right: rgb(0,102,204) 5px solid;
+}
+.admin{
+    display: block;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.content{
+    width: 80%;
+    background: #222;
+    height:90vh;
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.banner{
+    width:100%;
+    min-height: 5vh;
+    background-color: #111;
+    border-top-right-radius: 10px;
+}
+.welcomeUser{
+    text-align: center;
+    font-size: 1em;
+    padding-top:0.3em;
+    font-family: 'Montserrat', sans-serif;
+    color: #ddd;
+    font-weight: lighter;
+}
+.router{
+    min-height: 60vh;
+    width: 100%;
+}

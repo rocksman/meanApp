@@ -1,0 +1,39 @@
+.body{
+    padding:2em;
+    overflow: hidden;
+}
+h3{
+    color:#bbb;
+    font-family: 'Montserrat', sans-serif;
+}
+.projectContainer{
+    overflow-y: auto;
+    height: 40vh;
+}
+.projectCard{
+    display: block;
+    width: 100%;
+    background-color:#000;
+    color:#bbb;
+    padding: 0.6em;
+    border-radius:5px;
+    margin-bottom: 10px;
+}
+.projHead{
+    font-size: 1em;
+}
+p{
+    font-size:0.5em;
+}
+p span{
+    color: #3466cc;
+}
+button{
+    background: #3466cc;
+    color: #eee;
+    border:none;
+    padding: 10px;
+    border-radius: 30px;
+    float: right;
+    font-size: 0.5em;
+}

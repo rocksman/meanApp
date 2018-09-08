@@ -1,0 +1,13 @@
+<div class="body">
+  <div class="container">
+    <h3>Projects</h3>
+    <div class="projectContainer">
+      <div *ngFor="let proj of Projects ">
+        <div class="projectCard">
+          <div class="projHead">{{proj.projects.name}}</div>
+          <p>Amount required : <span>{{proj.projects.amount_req}}</span></p>
+          <button (click)="donate(proj.projects)">donate</button>
+        </div>
+      </div>
+    </div>
+  </div>

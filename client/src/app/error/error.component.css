@@ -1,0 +1,30 @@
+.body{
+    padding: 2em;
+}
+.container{
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-top:5em;
+}
+h3{
+    text-align: center;
+    color: #bbb;
+}
+form{
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #bbb;
+}
+input[type="radio"]{
+    margin-left:5px;
+    font-size: 1em;
+}
+select{
+    /* background: #bbb; */
+    opacity: 0.5;
+    border: none;
+    border-bottom: 1px rgb(92, 90, 90) solid;
+    font-size: 0.9em;
+}

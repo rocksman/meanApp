@@ -1,0 +1,18 @@
+<div class="container">
+  <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+    <div class="form-container">
+      <div class="row columns">
+        <div class="h3">Login</div>
+        <div class="fields">
+          <input type="email" id="dynamic-label-input" formControlName="email" placeholder="Email ID">
+          <label for="dynamic-label-input">Email ID</label>
+        </div>
+        <div class="fields">
+          <input type="password" id="dynamic-label-input" formControlName="password" placeholder="Password">
+          <label for="dynamic-label-input">Password</label>
+        </div>
+        <input type="submit" class="button expanded" value="login" [disabled]="!loginForm.valid">
+      </div>
+    </div>
+  </form>
+</div>

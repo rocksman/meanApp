@@ -1,0 +1,18 @@
+<div class="body">
+  <form [formGroup]="projectForm" (ngSubmit)="addProject(projectForm.value)">
+    <div class="form-container">
+      <div class="row columns">
+        <h3>New Project</h3>
+        <div class="fields">
+          <input type="text" id="dynamic-label-input" formControlName="name" placeholder="Project name">
+          <label for="dynamic-label-input">Project name</label>
+        </div>
+        <div class="fields">
+          <input type="text" id="dynamic-label-input" formControlName="amount" placeholder="Amount required">
+          <label for="dynamic-label-input">Amount required</label>
+        </div>
+        <input type="submit" class="button expanded" value="add" [disabled]="!projectForm.valid">
+      </div>
+    </div>
+  </form>
+</div>

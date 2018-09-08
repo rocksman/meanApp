@@ -1,0 +1,15 @@
+<div class="body">
+  <div class="container">
+    <h3>Choose a role</h3>
+    <form [formGroup]="roleForm" (ngSubmit)="chooseRole(roleForm.value)">
+      <!-- <select formControlName="roles">
+        <option value="default" default>Choose role</option>
+        <option value="lender">Lender</option>
+        <option value="borrower">Borrower</option>
+      </select> -->
+      <input type="radio" value="lender" formControlName="roles"/>Lender
+      <input type="radio" value="borrower" formControlName="roles"/>Borrower
+      <input type="submit" class="button expanded" value="save" [disabled]="!roleForm.valid">
+    </form>
+  </div>
+</div>

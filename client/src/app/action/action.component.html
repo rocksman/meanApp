@@ -1,0 +1,18 @@
+<div class="body">
+  <div class="container">
+    <h3>Dashboard</h3>
+    <div class="actionContainer">
+      <div *ngFor="let act of Actions.actions">
+        <div *ngIf="act.actions.donate">
+          <div class="actionCard">
+            <p>{{act.actions.emailfrom}} donated {{act.actions.amount_don}} to {{act.actions.emailto}}</p>
+          </div>
+        </div>
+        <div *ngIf="act.actions.added">
+          <div class="actionCard">
+            <p>You added a new project</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

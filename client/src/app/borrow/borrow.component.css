@@ -1,0 +1,71 @@
+.body{
+    padding: 1em 2em;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #bbb;
+    text-align: center;
+}
+form{
+    width:50%;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin: auto;
+    margin-top:3em;
+}
+.fields{
+    position: relative;
+    padding-top: 1.5rem;
+}
+label {
+    position: absolute;
+    top: 0;
+    color: #bbb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.2s ease-out;
+}
+
+input:placeholder-shown + label {
+    opacity: 0;
+    transform: translateY(20px);
+    cursor: text;
+}
+input[type="email"], input[type="text"]{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-bottom: solid 1px #777;
+    border-radius: 1px;
+    height: auto;
+    transition: border-color 0.3s;
+    box-shadow: none;
+    padding-left: 2px;
+    padding-right: 0px;
+    color: #bbb;
+    cursor: text;
+    background: rgba(0,0,0,0);
+    font-size: 0.9em;
+}
+input[type="email"]:focus,input[type="password"]:focus{
+    border-color: #bbb;
+}
+input.ng-valid.ng-touched {
+    border-bottom: 1px solid #0067b8;
+  }
+ input.ng-invalid.ng-touched {
+    border-bottom: 1px solid rgba(180, 24, 24, 0.5);
+}
+::placeholder{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: left;
+    color:rgba(200,200,200,0.6);
+    cursor: text;
+}
+.button{
+    float: right;
+    width: 60px;
+    border-radius: 5px;
+    background-color: #0067b8;
+}

@@ -1,0 +1,24 @@
+<div class="body">
+  <div class="container">
+    <div class="vertical-menu">
+      <div class="active">
+        <img src="../../assets/img/admin.png" class="admin" />
+      </div>
+      <div *ngIf="!user.admin">
+      <a (click)="roles()">Projects</a>
+    </div>
+      <a [routerLink]="['action']">Dashboard</a>
+
+    </div>
+    <div class="content">
+      <div class="banner">
+        <div class="welcomeUser">
+          Welcome {{username}}
+        </div>
+      </div>
+      <div class="router">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

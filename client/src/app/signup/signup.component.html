@@ -1,0 +1,30 @@
+<div class="container">
+  <form [formGroup]="signupForm" (ngSubmit)="signup(signupForm.value)">
+    <div class="form-container">
+      <div class="row columns">
+        <div class="h3">Sign Up</div>
+        <div class="fields">
+          <input type="text" id="dynamic-label-input" formControlName="username" placeholder="Username">
+          <label for="dynamic-label-input">Username</label>
+        </div>
+        <div class="fields">
+          <input type="email" id="dynamic-label-input" formControlName="email" placeholder="Email ID">
+          <label for="dynamic-label-input">Email ID</label>
+        </div>
+        <div class="fields">
+          <input type="password" id="dynamic-label-input" formControlName="password" placeholder="Password">
+          <label for="dynamic-label-input">Password</label>
+        </div>
+        <div class="fields">
+          <input type="password" id="dynamic-label-input" formControlName="confPassword" placeholder="Confirm password">
+          <label for="dynamic-label-input">Confirm password</label>
+        </div>
+        <select formControlName="roles">
+          <option value="lender">Lender</option>
+          <option value="borrower">Borrower</option>
+        </select>
+        <input type="submit" class="button expanded" value="Register" [disabled]="!signupForm.valid">
+      </div>
+    </div>
+  </form>
+</div>

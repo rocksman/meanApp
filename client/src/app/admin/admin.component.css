@@ -1,0 +1,24 @@
+.body{
+    padding:2em;
+    overflow: hidden;
+}
+h3{
+    color:#bbb;
+    font-family: 'Montserrat', sans-serif;
+}
+.actionContainer{
+    overflow-y: auto;
+    height: 40vh;
+}
+.actionCard{
+    display: block;
+    margin: 10px;
+    width: 100%;
+    background-color:#000;
+    color:#bbb;
+    padding: 0.5em;
+    border-radius:5px;
+}
+p{
+    font-size: 0.5em;
+}
